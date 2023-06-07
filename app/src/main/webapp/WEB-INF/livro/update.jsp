@@ -12,12 +12,14 @@
             <form action="/livro/update" method="post">
                 <input type="hidden" name="id" value="${livro.id}" />
                 <div class="form-group">
-                    <label for="Titulo">Título:</label>
+                    <label for="titulo">Título:</label>
                     <input type="text" name="titulo" class="form-control" value="${livro.titulo}" />
                 </div>
-                <div><label for="isbn">Título:</label>
-                <input type="text" name="isbn" class="form-control" value="${livro.isbn}" /></div>
-                <br/>
+                <div class="form-group">
+                    <label for="isbn">ISBN:</label>
+                    <input type="text" name="isbn" class="form-control" value="${livro.isbn}" />
+                </div>
+                <br />
                 <a href="/livro/list" class="btn btn-primary" >Voltar</a>
                 <button type="submit" class="btn btn-success">Salvar</button>
             </form>
